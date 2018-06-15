@@ -18,4 +18,4 @@ class Point:
         return self.y < other.y
 
     def __repr__(self):
-        return "Point(" + str(self.x) + ", " + str(self.y) + ")"
+        return "Point(%s, %s)" % (self.x, self.y)
