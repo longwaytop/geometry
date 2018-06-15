@@ -1,15 +1,8 @@
 from geom2d.point import *
 
-l = []
+l1 = [Point(i, i*i) for i in range(-5, 6)]
 
-for i in range (-5, 6):
-    l.append(Point(i, i*i))
+l2 = [Point(el.x, -el.y) for el in l1]
 
-l2 = []
-
-for el in l:
-    l2.append(Point(el.x, el.y))
-    el.y = -el.y
-
-print(l)
+print(l1)
 print(l2)
